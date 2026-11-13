@@ -16,7 +16,18 @@ Ergebnis:
 ```
 ghcr.io/<owner>/rf-dashboard-base:<version>
 ghcr.io/<owner>/rf-dashboard-base:latest
+docker.io/<dockerhub-user>/rf-dashboard-base:<version>
+docker.io/<dockerhub-user>/rf-dashboard-base:latest
 ```
+
+## Docker Hub
+
+Für den Push auf Docker Hub im GitHub-Repo unter **Settings → Secrets and variables → Actions** anlegen:
+
+- Variable `DOCKERHUB_USERNAME`: Docker-Hub-Benutzername
+- Secret `DOCKERHUB_TOKEN`: Access Token aus Docker Hub (**Account settings → Personal access tokens**, Berechtigung *Read & Write*)
+
+Das Repository `rf-dashboard-base` wird beim ersten Push automatisch angelegt (öffentlich, sofern in Docker Hub nicht anders eingestellt).
 
 ## Sichtbarkeit
 
